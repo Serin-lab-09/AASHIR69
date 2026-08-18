@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For Ayesha Shaikh ✨💖</title>
+  
+  <!-- Open Graph Meta Tags for WhatsApp & Social Media Preview Cards -->
+  <meta property="og:title" content="A Special Question For Ayesha Shaikh ✨💖">
+  <meta property="og:description" content="Click to view a special message created just for you!">
+  <meta property="og:type" content="website">
+
+  <style>
+    /* Global Styles & Reset */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    body {
+      background-color: #080808;
+      color: #ffffff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      overflow-x: hidden;
+      position: relative;
+      padding: 20px 0;
+    }
+
+    /* Ambient Music Toggle Button */
+    .music-toggle-btn {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      z-index: 100;
+      background: rgba(25, 10, 20, 0.85);
+      border: 2px solid #ff1493;
+      color: #ff69b4;
+      padding: 10px 20px;
+      border-radius: 30px;
+      cursor: pointer;
+      font-size: 0.95rem;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      box-shadow: 0 0 15px rgba(255, 20, 147, 0.4);
+      backdrop-filter: blur(8px);
+      transition: all 0.3s ease;
+    }
+
+    .music-toggle-btn:hover {
+      background: #ff1493;
+      color: #ffffff;
+      box-shadow: 0 0 25px rgba(255, 20, 147, 0.9);
+      transform: scale(1.05);
+    }
+
+    /* Ambient Pulsing Glow Background */
+    .bg-glow-1 {
+      position: fixed;
+      width: 450px;
+      height: 450px;
+      background: radial-gradient(circle, rgba(255, 20, 147, 0.3) 0%, rgba(0,0,0,0) 70%);
+      border-radius: 50%;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1;
+      animation: pulseGlow 4s infinite alternate ease-in-out;
+    }
+
+    .bg-glow-2 {
+      position: fixed;
+      width: 300px;
+      height: 300px;
+      background: radial-gradient(circle, rgba(255, 105, 180, 0.25) 0%, rgba(0,0,0,0) 70%);
+      border-radius: 50%;
+      top: 60%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1;
+      animation: pulseGlow 3s infinite alternate-reverse ease-in-out;
+    }
+
+    @keyframes pulseGlow {
+      0% { transform: translate(-50%, -50%) scale(0.85); opacity: 0.5; }
+      100% { transform: translate(-50%, -50%) scale(1.2); opacity: 0.95; }
+    }
+
+    /* Floating Particles & Hearts */
+    .heart-particle {
+      position: fixed;
+      color: #ff1493;
+      font-size: 1.3rem;
+      user-select: none;
+      pointer-events: none;
+      z-index: 1;
+      animation: floatUp linear infinite;
+    }
+
+    @keyframes floatUp {
+      0% {
+        transform: translateY(105vh) scale(0.7) rotate(0deg);
+        opacity: 0;
+      }
+      20% { opacity: 0.9; }
+      100% {
+        transform: translateY(-10vh) scale(1.4) rotate(360deg);
+        opacity: 0;
+      }
+    }
+
+    /* Glassmorphism Card Container */
+    .card-container {
+      position: relative;
+      z-index: 10;
+      width: 90%;
+      max-width: 500px;
+      min-height: 420px;
+      background: rgba(18, 12, 20, 0.88);
+      border: 2px solid #ff1493;
+      box-shadow: 0 0 30px rgba(255, 20, 147, 0.45), inset 0 0 20px rgba(255, 20, 147, 0.2);
+      border-radius: 24px;
+      backdrop-filter: blur(14px);
+      padding: 40px 30px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      transition: all 0.4s ease;
+      margin-bottom: 20px;
+    }
+
+    .card-subtitle {
+      font-size: 0.95rem;
+      color: #ffb6c1;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 8px;
+    }
+
+    .card-title {
+      font-size: 2.1rem;
+      color: #ff69b4;
+      text-shadow: 0 0 15px rgba(255, 105, 180, 0.8), 0 0 30px rgba(255, 20, 147, 0.4);
+      margin-bottom: 22px;
+      font-weight: 800;
+    }
+
+    .card-text {
+      font-size: 1.15rem;
+      color: #f0f0f0;
+      line-height: 1.7;
+      margin-bottom: 35px;
+    }
+
+    /* Interactive Buttons Area */
+    .button-group {
+      position: relative;
+      width: 100%;
+      height: 90px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      overflow: hidden;
+    }
+
+    .btn {
+      padding: 14px 36px;
+      font-size: 1.15rem;
+      font-weight: 700;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.3s ease;
+    }
+
+    .btn-yes {
+      background: linear-gradient(135deg, #ff1493, #ff69b4);
+      color: #ffffff;
+      box-shadow: 0 0 20px rgba(255, 20, 147, 0.7);
+      z-index: 2;
+    }
+
+    .btn-yes:hover {
+      background: linear-gradient(135deg, #ff69b4, #ff1493);
+      transform: scale(1.1);
+      box-shadow: 0 0 30px rgba(255, 105, 180, 1);
+    }
+
+    .btn-no {
+      background: #1f1f1f;
+      color: #ff69b4;
+      border: 1px solid #ff1493;
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.6);
+      transition: left 0.2s ease, top 0.2s ease;
+    }
+
+    /* Glowing Monogram Badge */
+    .monogram-badge {
+      background: rgba(255, 20, 147, 0.15);
+      border: 2px solid #ff1493;
+      border-radius: 50%;
+      width: 90px;
+      height: 90px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.4rem;
+      font-weight: 800;
+      color: #ff69b4;
+      text-shadow: 0 0 10px rgba(255, 105, 180, 0.8);
+      box-shadow: 0 0 20px rgba(255, 20, 147, 0.5);
+      margin: 20px auto 0 auto;
+    }
+
+    /* Screen Transitions */
+    .fade-out {
+      opacity: 0;
+      transform: scale(0.9);
+      transition: all 0.4s ease;
+    }
+
+    .fade-in {
+      animation: fadeIn 0.5s ease forwards;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.92); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    /* Footer Styling */
+    footer {
+      position: relative;
+      z-index: 10;
+      font-size: 0.9rem;
+      color: #ffb6c1;
+      text-align: center;
+      padding: 10px 0;
+    }
+
+    footer a {
+      color: #ff69b4;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    footer a:hover {
+      color: #ffffff;
+      text-shadow: 0 0 8px #ff1493;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Audio Element -->
+  <audio id="bgMusic" loop preload="auto">
+    <source src="https://cdn.pixabay.com/download/audio/2022/05/27/audio_1808fbf07a.mp3?filename=romantic-piano-112199.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- Interactive Music Toggle Button -->
+  <button class="music-toggle-btn" id="musicToggleBtn" onclick="toggleMusic()">
+    <span id="musicIcon">🎵</span>
+    <span id="musicLabel">Play Music</span>
+  </button>
+
+  <div class="bg-glow-1"></div>
+  <div class="bg-glow-2"></div>
+
+  <!-- Background Floating Stream -->
+  <div id="heart-container"></div>
+
+  <!-- Main Proposal Card -->
+  <div class="card-container" id="proposalCard">
+    <p class="card-subtitle">A Special Question For You</p>
+    <h1 class="card-title" id="cardTitle">Ayesha Shaikh ✨</h1>
+
+    <p class="card-text" id="cardText">
+      Out of all the people in the world, you are the one who makes my heart skip a beat. Will you do me the honor of being mine forever?
+    </p>
+
+    <div class="button-group" id="buttonGroup">
+      <button class="btn btn-yes" id="yesBtn" onclick="acceptProposal()">Yes 💕</button>
+      <button class="btn btn-no" id="noBtn">No 🥺</button>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    Designed with ❤️ | Follow <a href="https://instagram.com/0zainshaikh" target="_blank" rel="noopener noreferrer">@0zainshaikh</a> on Instagram
+  </footer>
+
+  <script>
+    const bgMusic = document.getElementById("bgMusic");
+    const musicIcon = document.getElementById("musicIcon");
+    const musicLabel = document.getElementById("musicLabel");
+    let isPlaying = false;
+
+    bgMusic.volume = 0.45;
+
+    function playAudio() {
+      bgMusic.play().then(() => {
+        isPlaying = true;
+        musicIcon.textContent = "🔊";
+        musicLabel.textContent = "Music On";
+      }).catch((err) => {
+        console.log("Autoplay waiting for interaction:", err);
+      });
+    }
+
+    function pauseAudio() {
+      bgMusic.pause();
+      isPlaying = false;
+      musicIcon.textContent = "🔇";
+      musicLabel.textContent = "Music Off";
+    }
+
+    function toggleMusic() {
+      if (isPlaying) {
+        pauseAudio();
+      } else {
+        playAudio();
+      }
+    }
+
+    function startMusicOnFirstInteraction() {
+      if (!isPlaying) {
+        playAudio();
+      }
+      document.removeEventListener("click", startMusicOnFirstInteraction);
+      document.removeEventListener("touchstart", startMusicOnFirstInteraction);
+    }
+
+    document.addEventListener("click", startMusicOnFirstInteraction);
+    document.addEventListener("touchstart", startMusicOnFirstInteraction);
+
+    const rejectionSequence = [
+      {
+        title: "Wait, Ayesha! 🥺",
+        text: "Are you really sure? Think about all our sweetest memories together..."
+      },
+      {
+        title: "Reconsider it? 💖",
+        text: "My world is so much brighter with you in it. Give us a chance to write our beautiful story!"
+      },
+      {
+        title: "One More Chance! ✨",
+        text: "I promise to cherish you and bring a smile to your face every single day!"
+      },
+      {
+        title: "Nice Try, Ayesha! 😉",
+        text: "It seems the 'No' button is playing hard to get! 'Yes' is definitely the right choice..."
+      }
+    ];
+
+    let noClickCount = 0;
+    const noBtn = document.getElementById("noBtn");
+    const yesBtn = document.getElementById("yesBtn");
+    const cardTitle = document.getElementById("cardTitle");
+    const cardText = document.getElementById("cardText");
+    const buttonGroup = document.getElementById("buttonGroup");
+    const proposalCard = document.getElementById("proposalCard");
+
+    function handleNoAttempt() {
+      if (noClickCount < rejectionSequence.length) {
+        const nextState = rejectionSequence[noClickCount];
+        cardTitle.textContent = nextState.title;
+        cardText.textContent = nextState.text;
+      } else {
+        cardTitle.textContent = "Destiny Awaits! ✨";
+        cardText.textContent = "The stars have aligned, Ayesha... 'Yes' is waiting for you!";
+      }
+
+      const currentScale = 1 + (noClickCount + 1) * 0.15;
+      yesBtn.style.transform = `scale(${currentScale})`;
+
+      noBtn.style.position = "absolute";
+      
+      const groupRect = buttonGroup.getBoundingClientRect();
+      const btnRect = noBtn.getBoundingClientRect();
+
+      const maxX = groupRect.width - btnRect.width;
+      const maxY = groupRect.height - btnRect.height;
+
+      const randomX = Math.floor(Math.random() * Math.max(maxX, 20));
+      const randomY = Math.floor(Math.random() * Math.max(maxY, 20));
+
+      noBtn.style.left = `${randomX}px`;
+      noBtn.style.top = `${randomY}px`;
+
+      noClickCount++;
+    }
+
+    noBtn.addEventListener("mouseover", handleNoAttempt);
+    noBtn.addEventListener("touchstart", function(e) {
+      e.preventDefault();
+      handleNoAttempt();
+    });
+
+    function acceptProposal() {
+      proposalCard.classList.add("fade-out");
+
+      setTimeout(() => {
+        proposalCard.innerHTML = `
+          <h1 class="card-title">Forever & Always, Ayesha Shaikh & Aashir! ✨</h1>
+          <p class="card-subtitle">Two Hearts, One Journey</p>
+
+          <p class="card-text">
+            You just made me the happiest person in the world! I can't wait to create endless beautiful memories together. 🌹👑
+          </p>
+
+          <div class="monogram-badge">
+            A + A
+          </div>
+        `;
+        proposalCard.classList.remove("fade-out");
+        proposalCard.classList.add("fade-in");
+        
+        if (!isPlaying) {
+          playAudio();
+        }
+
+        createHeartBurst();
+      }, 400);
+    }
+
+    function createHearts() {
+      const container = document.getElementById("heart-container");
+      const heartSymbols = ["💖", "💕", "🌸", "✨", "❤️", "👑"];
+
+      for (let i = 0; i < 30; i++) {
+        const heart = document.createElement("div");
+        heart.className = "heart-particle";
+        heart.textContent = heartSymbols[Math.floor(Math.random() * heartSymbols.length)];
+        heart.style.left = `${Math.random() * 100}vw`;
+        heart.style.animationDuration = `${3 + Math.random() * 4}s`;
+        heart.style.animationDelay = `${Math.random() * 5}s`;
+        container.appendChild(heart);
+      }
+    }
+
+    function createHeartBurst() {
+      const container = document.getElementById("heart-container");
+      for (let i = 0; i < 50; i++) {
+        const heart = document.createElement("div");
+        heart.className = "heart-particle";
+        heart.textContent = "💖";
+        heart.style.left = `${Math.random() * 100}vw`;
+        heart.style.animationDuration = `${1.2 + Math.random() * 2}s`;
+        container.appendChild(heart);
+      }
+    }
+
+    createHearts();
+  </script>
+</body>
+</html>
